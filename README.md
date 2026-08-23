@@ -1,39 +1,45 @@
 # Brian Gachau Thuo — Portfolio
 
-Personal site of Brian Thuo, a Rust systems engineer and IT Ops professional based in Nairobi, Kenya.
+A premium, dark-themed developer portfolio built from scratch. Fast, minimal, and content-first.
 
 **Live site:** [thuobrian.github.io/Brian-Thuo](https://thuobrian.github.io/Brian-Thuo/)
 
 ## About
 
-I build reliable backend systems, local AI tooling, and IT operations infrastructure — mostly in Rust and Python. By day I run IT Operations at IPA Kenya; by night I ship open-source projects for East Africa.
+I'm Brian Thuo, a Rust systems engineer and IT Ops lead based in Nairobi, Kenya. I build reliable backend systems and local AI tooling for teams in East Africa.
+
+## Tech stack
+
+- HTML5
+- CSS3 (custom properties, grid, flexbox)
+- Vanilla JavaScript (nav, scroll, mobile menu)
+
+No frameworks. No build step. No external dependencies.
 
 ## Featured projects
 
-- [Laptop Inventory CLI/API](https://github.com/ThuoBrian/Laptop_Inventory_CLI) — Rust, Actix-web, PostgreSQL, SQLx, Docker
-- [AI Support Chatbot](https://github.com/ThuoBrian/AI-support-chatbot) — Local RAG with Ollama + ChromaDB + FastAPI + SSE
-- [Kenyan AI Financial Advisor](https://github.com/ThuoBrian/kenyan-AI-powered-financial-advisor) — Python AI advisor for the Kenyan market
-- [PR Context Builder](https://github.com/ThuoBrian/pr-context-builder) — Rust CLI for building PR summaries
-- [Decoder Ring](https://github.com/ThuoBrian/Decoder-Ring) — Rust CLI with statistical analysis and shift guessing
-- [Learn Ops](https://github.com/ThuoBrian/learn-ops) — Free AI/ML & Cybersecurity training finder
+- [Laptop Inventory API](https://github.com/ThuoBrian/Laptop_Inventory_CLI) — Rust, Actix-web, PostgreSQL, SQLx, Docker
+- [AI Support Chatbot](https://github.com/ThuoBrian/AI-support-chatbot) — Python, FastAPI, ChromaDB, Ollama, SSE
+- [Kenyan AI Financial Advisor](https://github.com/ThuoBrian/kenyan-AI-powered-financial-advisor) — Python, AI/ML, FastAPI
+- [PR Context Builder](https://github.com/ThuoBrian/pr-context-builder) — Rust, CLI, Git
 
 See more on [github.com/ThuoBrian](https://github.com/ThuoBrian).
 
 ## Contact
 
 - Email: [thuogachau@gmail.com](mailto:thuogachau@gmail.com)
+- GitHub: [github.com/ThuoBrian](https://github.com/ThuoBrian)
 - LinkedIn: [linkedin.com/in/brian-thuo-gachau](https://www.linkedin.com/in/brian-thuo-gachau)
-- Twitter: [@Thuo_Bryce](https://twitter.com/Thuo_Bryce)
 
 ## Run locally
 
-Open `index.html` in a browser, or serve with any static file server:
+Open `index.html` in a browser, or use any static server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-## License
+## Notes
 
-- Site content: © Brian Gachau Thuo
-- Template: [Astral](https://html5up.net/astral) by [HTML5 UP](https://html5up.net), licensed under [CCA 3.0](https://html5up.net/license)
+- Project preview images (`images/pic01.jpg`–`pic07.jpg`) are placeholders. Replace them with real screenshots when ready.
+- The About photo currently uses `images/pic05.jpg`. Replace it with a professional headshot.
