@@ -1,45 +1,34 @@
-# Brian Gachau Thuo — Portfolio
+# Brian Gachau Thuo
 
-A premium, dark-themed developer portfolio built from scratch. Fast, minimal, and content-first.
+**Rust Systems Engineer · IT Ops · Nairobi, Kenya**
 
-**Live site:** [thuobrian.github.io/Brian-Thuo](https://thuobrian.github.io/Brian-Thuo/)
+I build reliable backend systems and local AI tooling for teams in East Africa.
 
-## About
+**Portfolio:** [thuobrian.github.io/thuobrian](https://thuobrian.github.io/thuobrian/)
 
-I'm Brian Thuo, a Rust systems engineer and IT Ops lead based in Nairobi, Kenya. I build reliable backend systems and local AI tooling for teams in East Africa.
+---
+
+## Selected work
+
+- **[Laptop Inventory API](https://github.com/ThuoBrian/Laptop_Inventory_CLI)** — Hardware-assignment tracker with compile-time checked SQL. Rust, Actix-web, PostgreSQL, SQLx, Docker.
+- **[AI Support Chatbot](https://github.com/ThuoBrian/AI-support-chatbot)** — Local RAG IT-support bot using Ollama, ChromaDB, FastAPI, and SSE streaming.
+- **[Kenyan AI Financial Advisor](https://github.com/ThuoBrian/kenyan-AI-powered-financial-advisor)** — AI advisor tuned for the Kenyan market: budgeting, saving, investing, tax.
+- **[PR Context Builder](https://github.com/ThuoBrian/pr-context-builder)** — Rust CLI that builds rich PR summaries from Git context.
+
+See all projects at [github.com/ThuoBrian](https://github.com/ThuoBrian).
+
+---
 
 ## Tech stack
 
-- HTML5
-- CSS3 (custom properties, grid, flexbox)
-- Vanilla JavaScript (nav, scroll, mobile menu)
+**Languages:** Rust, Python, Go  
+**Frameworks:** FastAPI, Actix-web, SQLx  
+**Tools:** Docker, PostgreSQL, Linux, ChromaDB, Ollama
 
-No frameworks. No build step. No external dependencies.
-
-## Featured projects
-
-- [Laptop Inventory API](https://github.com/ThuoBrian/Laptop_Inventory_CLI) — Rust, Actix-web, PostgreSQL, SQLx, Docker
-- [AI Support Chatbot](https://github.com/ThuoBrian/AI-support-chatbot) — Python, FastAPI, ChromaDB, Ollama, SSE
-- [Kenyan AI Financial Advisor](https://github.com/ThuoBrian/kenyan-AI-powered-financial-advisor) — Python, AI/ML, FastAPI
-- [PR Context Builder](https://github.com/ThuoBrian/pr-context-builder) — Rust, CLI, Git
-
-See more on [github.com/ThuoBrian](https://github.com/ThuoBrian).
+---
 
 ## Contact
 
 - Email: [thuogachau@gmail.com](mailto:thuogachau@gmail.com)
-- GitHub: [github.com/ThuoBrian](https://github.com/ThuoBrian)
 - LinkedIn: [linkedin.com/in/brian-thuo-gachau](https://www.linkedin.com/in/brian-thuo-gachau)
-
-## Run locally
-
-Open `index.html` in a browser, or use any static server:
-
-```bash
-python3 -m http.server 8000
-```
-
-## Notes
-
-- Project preview images (`images/pic01.jpg`–`pic07.jpg`) are placeholders. Replace them with real screenshots when ready.
-- The About photo currently uses `images/pic05.jpg`. Replace it with a professional headshot.
+- GitHub: [github.com/ThuoBrian](https://github.com/ThuoBrian)
