@@ -4,7 +4,7 @@
 
 I build reliable backend systems and local AI tooling for teams in East Africa.
 
-**Portfolio:** [thuobrian.github.io/thuobrian](https://thuobrian.github.io/thuobrian/)
+**Portfolio:** [thuobrian.github.io/Brian-Thuo](https://thuobrian.github.io/Brian-Thuo/)
 
 ---
 
