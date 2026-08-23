@@ -2189,3 +2189,122 @@ input, select, textarea {
 			}
 
 		}
+
+/* Portfolio enhancements */
+
+	.tech-stack {
+		list-style: none;
+		padding: 0;
+		margin: 1.5em 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+	}
+
+		.tech-stack li {
+			display: inline-block;
+			padding: 0.35em 0.8em;
+			border-radius: 999px;
+			background: rgba(0, 0, 0, 0.05);
+			font-size: 0.85em;
+			color: #444;
+		}
+
+	.project-grid {
+		margin-top: 1.5em;
+	}
+
+	.project-card {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		border-radius: 0.35em;
+		margin-bottom: 1.5em;
+	}
+
+		.project-card img {
+			display: block;
+			width: 100%;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+
+		.project-card:hover img {
+			transform: scale(1.04);
+			opacity: 0.85;
+		}
+
+		.project-card .project-caption {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 1em;
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+			color: #fff;
+			opacity: 0;
+			transform: translateY(0.5em);
+			transition: opacity 0.3s ease, transform 0.3s ease;
+			pointer-events: none;
+		}
+
+			.project-card .project-caption strong {
+				display: block;
+				font-weight: 600;
+				margin-bottom: 0.25em;
+			}
+
+			.project-card .project-caption em {
+				display: block;
+				font-size: 0.8em;
+				font-style: normal;
+				opacity: 0.9;
+			}
+
+		.project-card:hover .project-caption {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+	.contact-links {
+		list-style: none;
+		padding: 0;
+		margin: 1.5em 0;
+	}
+
+		.contact-links li {
+			margin: 0.6em 0;
+		}
+
+		.contact-links a {
+			text-decoration: none;
+			border: 0;
+		}
+
+		.contact-links a::before {
+			margin-right: 0.6em;
+		}
+
+	.more-work {
+		text-align: center;
+		margin-top: 1em;
+		font-size: 0.95em;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.project-card .project-caption {
+			opacity: 1;
+			transform: translateY(0);
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+			padding: 0.75em;
+		}
+
+		.project-card .project-caption strong {
+			font-size: 0.95em;
+		}
+
+		.project-card .project-caption em {
+			font-size: 0.75em;
+		}
+
+	}

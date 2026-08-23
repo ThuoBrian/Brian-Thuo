@@ -1,9 +1,49 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>Jambo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<title>Brian Gachau Thuo · Rust Systems Engineer & IT Ops</title>
+		<meta name="description" content="Brian Gachau Thuo is a Rust systems engineer and IT Ops professional in Nairobi, Kenya. Building backend systems, local AI tools, and infrastructure for East Africa." />
+		<meta name="author" content="Brian Gachau Thuo" />
+		<link rel="canonical" href="https://thuobrian.github.io/Brian-Thuo/" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Brian Gachau Thuo · Rust Systems Engineer & IT Ops" />
+		<meta property="og:description" content="Backend systems, local AI tooling, and IT operations infrastructure — built with Rust, Python, and Go." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://thuobrian.github.io/Brian-Thuo/" />
+		<meta property="og:image" content="https://thuobrian.github.io/Brian-Thuo/images/me_1.jpg" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Brian Gachau Thuo · Rust Systems Engineer & IT Ops" />
+		<meta name="twitter:description" content="Backend systems, local AI tooling, and IT operations infrastructure — built with Rust, Python, and Go." />
+		<meta name="twitter:image" content="https://thuobrian.github.io/Brian-Thuo/images/me_1.jpg" />
+
+		<!-- JSON-LD Person schema -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Brian Gachau Thuo",
+			"jobTitle": "Rust Systems Engineer & IT Ops",
+			"url": "https://thuobrian.github.io/Brian-Thuo/",
+			"sameAs": [
+				"https://github.com/ThuoBrian",
+				"https://www.linkedin.com/in/brian-thuo-gachau",
+				"https://twitter.com/Thuo_Bryce"
+			],
+			"email": "mailto:thuogachau@gmail.com",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Nairobi",
+				"addressCountry": "KE"
+			}
+		}
+		</script>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -13,11 +53,13 @@
 			<div id="wrapper">
 
 				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/Thuo_Bryce" class="icon brands fa-twitter"><span>Twitter</span></a>
+					<nav id="nav" aria-label="Primary">
+						<a href="#home" class="icon solid fa-home" aria-label="Home"><span>Home</span></a>
+						<a href="#about" class="icon solid fa-user" aria-label="About"><span>About</span></a>
+						<a href="#work" class="icon solid fa-folder" aria-label="Work"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope" aria-label="Contact"><span>Contact</span></a>
+						<a href="https://github.com/ThuoBrian" class="icon brands fa-github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><span>GitHub</span></a>
+						<a href="https://www.linkedin.com/in/brian-thuo-gachau" class="icon brands fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -27,47 +69,112 @@
 							<article id="home" class="panel intro">
 								<header>
 									<h1>Brian Gachau Thuo</h1>
-									<p>Golang & I.T Engineer</p>
+									<p>Rust Systems Engineer · IT Ops @ IPA Kenya</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me_1.jpg" alt="" />
+									<img src="images/me_1.jpg" alt="Portrait of Brian Gachau Thuo" width="400" height="400" />
 								</a>
+							</article>
+
+						<!-- About -->
+							<article id="about" class="panel">
+								<header>
+									<h2>About Me</h2>
+								</header>
+								<p>
+									I’m a systems engineer based in Nairobi, Kenya, building reliable backend infrastructure and developer tools for East Africa. Most of my work is in <strong>Rust</strong> and <strong>Python</strong>, with a growing focus on local/edge AI systems, IT operations automation, and cloud-native tooling.
+								</p>
+								<p>
+									By day I run IT Operations at <strong>IPA Kenya</strong>. By night I ship open-source projects — from RAG chatbots and inventory APIs to Rust CLI utilities.
+								</p>
+								<section>
+									<h3>Tech I work with</h3>
+									<ul class="tech-stack">
+										<li>Rust</li>
+										<li>Python</li>
+										<li>Go</li>
+										<li>FastAPI</li>
+										<li>Actix-web</li>
+										<li>PostgreSQL</li>
+										<li>SQLx</li>
+										<li>Docker</li>
+										<li>ChromaDB</li>
+										<li>Ollama</li>
+										<li>Linux</li>
+									</ul>
+								</section>
 							</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>Selected Work</h2>
 								</header>
 								<p>
-									Under Construction :) 
+									A few projects I’ve built recently. Most are open source — click through to read the code or try them out.
 								</p>
 								<section>
-									<div class="row">
+									<div class="row project-grid">
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/Laptop_Inventory_CLI" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic01.jpg" alt="Laptop Inventory CLI preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>Laptop Inventory API</strong>
+													<em>Rust · Actix-web · PostgreSQL · SQLx · Docker</em>
+												</span>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/AI-support-chatbot" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic02.jpg" alt="AI Support Chatbot preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>AI Support Chatbot</strong>
+													<em>Local RAG · Ollama · ChromaDB · FastAPI · SSE</em>
+												</span>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/kenyan-AI-powered-financial-advisor" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic03.jpg" alt="Kenyan AI Financial Advisor preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>Kenyan AI Financial Advisor</strong>
+													<em>Python · AI · Budgeting · Investing · Tax</em>
+												</span>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/pr-context-builder" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic04.jpg" alt="PR Context Builder preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>PR Context Builder</strong>
+													<em>Rust CLI · Git · Developer productivity</em>
+												</span>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/Decoder-Ring" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic05.jpg" alt="Decoder Ring preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>Decoder Ring</strong>
+													<em>Rust CLI · Statistical analysis · Shift guessing</em>
+												</span>
+											</a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+											<a href="https://github.com/ThuoBrian/learn-ops" class="image fit project-card" target="_blank" rel="noopener noreferrer">
+												<img src="images/pic06.jpg" alt="Learn Ops preview" loading="lazy" />
+												<span class="project-caption">
+													<strong>Learn Ops</strong>
+													<em>JavaScript · Training finder · AI/ML · Cybersecurity</em>
+												</span>
+											</a>
 										</div>
 									</div>
 								</section>
+								<p class="more-work">
+									See more on <a href="https://github.com/ThuoBrian" target="_blank" rel="noopener noreferrer">GitHub</a>.
+								</p>
 							</article>
 
 						<!-- Contact -->
@@ -75,20 +182,29 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<p>
+									Open to freelance, collaborations, and systems/infrastructure roles. The best way to reach me is by email.
+								</p>
+								<ul class="contact-links">
+									<li><a href="mailto:thuogachau@gmail.com" class="icon solid fa-envelope"><span>thuogachau@gmail.com</span></a></li>
+									<li><a href="https://github.com/ThuoBrian" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span>github.com/ThuoBrian</span></a></li>
+									<li><a href="https://www.linkedin.com/in/brian-thuo-gachau" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span>linkedin.com/in/brian-thuo-gachau</span></a></li>
+									<li><a href="https://twitter.com/Thuo_Bryce" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span>@Thuo_Bryce</span></a></li>
+								</ul>
+								<form action="https://formspree.io/f/xnqevvjz" method="POST">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name" required />
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="email" name="email" placeholder="Email" required />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" required />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" placeholder="Message" rows="6" required></textarea>
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message" />
@@ -103,7 +219,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Thuo.</li><li>Design: <a href="">Thuo Designs</a></li>
+							<li>&copy; Brian Gachau Thuo.</li><li>Built by <a href="https://github.com/ThuoBrian" target="_blank" rel="noopener noreferrer">ThuoBrian</a></li>
 						</ul>
 					</div>
 
