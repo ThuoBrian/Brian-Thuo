@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">PR Context Builder — example generated review briefing</title>
+  <desc id="desc">A terminal-style illustration showing the CLI gathering diff context from git and generating a structured review briefing with cross-file impact and a security note.</desc>
+  <defs>
+    <linearGradient id="pr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151D2E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="400" rx="14" fill="url(#pr-bg)"/>
+  <rect x="0.5" y="0.5" width="639" height="399" rx="13.5" fill="none" stroke="#94A3B8" stroke-opacity="0.16"/>
+
+  <rect x="0" y="0" width="640" height="40" rx="14" fill="#0F172A"/>
+  <rect x="0" y="26" width="640" height="14" fill="#0F172A"/>
+  <line x1="0" y1="40" x2="640" y2="40" stroke="#94A3B8" stroke-opacity="0.14"/>
+  <circle cx="24" cy="20" r="5.5" fill="#34D399"/>
+  <circle cx="44" cy="20" r="5.5" fill="#FBBF24"/>
+  <circle cx="64" cy="20" r="5.5" fill="#64748B"/>
+  <text x="616" y="24" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#64748B">pr-context · rust cli</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">
+    <text x="28" y="80"><tspan fill="#34D399">$</tspan><tspan fill="#F1F5F9"> pr-context --briefing 482</tspan></text>
+
+    <text x="28" y="112" fill="#64748B">Gathering diff... 14 files changed</text>
+    <text x="28" y="136" fill="#64748B">Detecting patterns... migration found</text>
+    <text x="28" y="160" fill="#64748B">Generating briefing via Ollama...</text>
+
+    <rect x="24" y="180" width="592" height="140" rx="8" fill="#1E293B" fill-opacity="0.6" stroke="#94A3B8" stroke-opacity="0.14"/>
+    <text x="44" y="208"><tspan fill="#FBBF24">Cross-file impact</tspan><tspan fill="#94A3B8">: auth middleware</tspan></text>
+    <text x="44" y="234"><tspan fill="#FBBF24">Security note</tspan><tspan fill="#94A3B8">: raw SQL in handler.rs</tspan></text>
+    <text x="44" y="260"><tspan fill="#FBBF24">Test coverage</tspan><tspan fill="#94A3B8">: missing for edge case</tspan></text>
+    <text x="44" y="292" fill="#34D399">✓ briefing.json written</text>
+
+    <text x="28" y="352" fill="#64748B">// runs against local git context or a GitHub PR via REST</text>
+  </g>
+</svg>

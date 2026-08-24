@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Kenyan AI Financial Advisor — example budget breakdown</title>
+  <desc id="desc">A terminal-style illustration showing a CLI budget command producing a breakdown using Kenya-specific categories like M-Pesa and SACCO deposits, with an investment recommendation.</desc>
+  <defs>
+    <linearGradient id="fa-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151D2E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="640" height="400" rx="14" fill="url(#fa-bg)"/>
+  <rect x="0.5" y="0.5" width="639" height="399" rx="13.5" fill="none" stroke="#94A3B8" stroke-opacity="0.16"/>
+
+  <rect x="0" y="0" width="640" height="40" rx="14" fill="#0F172A"/>
+  <rect x="0" y="26" width="640" height="14" fill="#0F172A"/>
+  <line x1="0" y1="40" x2="640" y2="40" stroke="#94A3B8" stroke-opacity="0.14"/>
+  <circle cx="24" cy="20" r="5.5" fill="#34D399"/>
+  <circle cx="44" cy="20" r="5.5" fill="#FBBF24"/>
+  <circle cx="64" cy="20" r="5.5" fill="#64748B"/>
+  <text x="616" y="24" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#64748B">finance-agent · KE</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15.5">
+    <text x="28" y="80"><tspan fill="#34D399">$</tspan><tspan fill="#F1F5F9"> finance-agent budget --income 65000</tspan></text>
+
+    <text x="28" y="118" fill="#94A3B8">Housing</text>
+    <text x="252" y="118" text-anchor="end" fill="#F1F5F9">18,000</text>
+    <text x="320" y="118" fill="#64748B">(28%)</text>
+
+    <text x="28" y="146" fill="#94A3B8">M-Pesa / Fuliza</text>
+    <text x="252" y="146" text-anchor="end" fill="#F1F5F9">4,200</text>
+    <text x="320" y="146" fill="#64748B">(6%)</text>
+
+    <text x="28" y="174" fill="#94A3B8">SACCO deposit</text>
+    <text x="252" y="174" text-anchor="end" fill="#F1F5F9">6,500</text>
+    <text x="320" y="174" fill="#64748B">(10%)</text>
+
+    <text x="28" y="202" fill="#94A3B8">Savings buffer</text>
+    <text x="252" y="202" text-anchor="end" fill="#F1F5F9">11,000</text>
+    <text x="320" y="202" fill="#64748B">(17%)</text>
+
+    <rect x="24" y="228" width="592" height="1" fill="#94A3B8" fill-opacity="0.16"/>
+
+    <text x="28" y="264" fill="#FBBF24">Recommendation</text>
+    <text x="28" y="288" fill="#F1F5F9">Shift 5% to 91-day Treasury Bills</text>
+    <text x="28" y="312" fill="#F1F5F9">(~16% p.a.) once buffer covers 3 months</text>
+    <text x="28" y="346" fill="#64748B">// educational output only — not licensed financial advice</text>
+  </g>
+</svg>

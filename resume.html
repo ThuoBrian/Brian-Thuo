@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brian Gachau Thuo · Résumé</title>
+<meta name="description" content="Résumé for Brian Gachau Thuo, Rust systems engineer and IT Ops lead, Nairobi, Kenya." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<style>
+  :root {
+    --bg-void: #070B14;
+    --bg-surface: #0F172A;
+    --bg-elevated: #151D2E;
+    --text: #F1F5F9;
+    --text-muted: #94A3B8;
+    --text-dim: #64748B;
+    --border: rgba(148, 163, 184, 0.16);
+    --emerald: #34D399;
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg-void);
+    color: var(--text);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+  .sheet {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3.5rem 2.5rem 5rem;
+  }
+  .toolbar {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 1rem 2.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .print-btn {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+  }
+  .print-btn:hover { border-color: rgba(148,163,184,0.4); }
+
+  header.head {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 0.25rem; }
+  .title { color: var(--text-muted); font-size: 1.05rem; margin: 0 0 1rem; }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .contact-row a { color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .contact-row a:hover { color: var(--text); border-color: var(--text-muted); }
+
+  section { margin-bottom: 2rem; }
+  h2.section-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--emerald);
+    margin: 0 0 1rem;
+  }
+
+  .summary { color: var(--text-muted); font-size: 1rem; }
+
+  .entry { margin-bottom: 1.25rem; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .entry-title { font-weight: 600; }
+  .entry-meta {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .entry p { margin: 0.35rem 0 0; color: var(--text-muted); font-size: 0.95rem; }
+  .entry ul { margin: 0.5rem 0 0; padding-left: 1.1rem; color: var(--text-muted); font-size: 0.92rem; }
+  .entry li { margin-bottom: 0.3rem; }
+  .entry .tags { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-dim); margin-top: 0.4rem; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    font-size: 0.9rem;
+  }
+  .skills-grid h3 { font-size: 0.85rem; margin: 0 0 0.4rem; color: var(--text); }
+  .skills-grid p { margin: 0; color: var(--text-muted); }
+
+  .todo {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: #FBBF24;
+    border: 1px dashed rgba(251, 191, 36, 0.4);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.75rem;
+  }
+
+  @media print {
+    .toolbar { display: none; }
+    body { background: #fff; color: #111827; }
+    .sheet { padding: 0; max-width: 100%; }
+    h2.section-label { color: #111827; }
+    .summary, .entry p, .entry ul, .skills-grid p, .contact-row { color: #374151; }
+    .entry-meta, .contact-row a { color: #4B5563; }
+    .contact-row a { border-color: #D1D5DB; }
+    header.head, .entry { break-inside: avoid; }
+    .todo { display: none; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="sheet">
+    <header class="head">
+      <h1>Brian Gachau Thuo</h1>
+      <p class="title">Rust Systems Engineer · IT Ops · Nairobi, Kenya</p>
+      <div class="contact-row">
+        <a href="mailto:thuogachau@gmail.com">thuogachau@gmail.com</a>
+        <a href="https://github.com/ThuoBrian" target="_blank" rel="noopener noreferrer">github.com/ThuoBrian</a>
+        <a href="https://www.linkedin.com/in/brian-thuo-gachau" target="_blank" rel="noopener noreferrer">linkedin.com/in/brian-thuo-gachau</a>
+        <a href="https://thuobrian.github.io/Brian-Thuo/" target="_blank" rel="noopener noreferrer">thuobrian.github.io/Brian-Thuo</a>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-label">Summary</h2>
+      <p class="summary">Systems engineer and IT Ops lead building reliable backend systems and local AI tooling for teams in East Africa. Mostly Rust and Python, with a focus on local/edge AI, automation, and cloud-native infrastructure.</p>
+    </section>
+
+    <section>
+      <h2 class="section-label">Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">IPA Kenya — Systems Engineer &amp; IT Ops Lead</span>
+          <span class="entry-meta"><!-- add start date --></span>
+        </div>
+        <p>Designs backend systems and AI-powered tools that stay reliable under real-world operational constraints.</p>
+        <div class="todo">TODO (Brian): add exact start date, and any prior roles/employers — this section currently only reflects what's stated on the portfolio site.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-label">Selected Projects</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Laptop Inventory API</span>
+          <span class="entry-meta">2024</span>
+        </div>
+        <p>Rust/Actix-web + Postgres asset-tracking API. Compile-time checked SQL via SQLx (no ORM); atomic transactions so unassigning a user always reverts laptop status in the same operation. Ships a server-rendered HTMX dashboard for non-technical staff.</p>
+        <div class="tags">Rust · Actix-web · PostgreSQL · SQLx · Docker</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">AI Support Chatbot</span>
+          <span class="entry-meta">2024</span>
+        </div>
+        <p>Local RAG IT-support assistant — Ollama, ChromaDB, FastAPI with SSE streaming. Answers questions from ingested PDFs/Word/Markdown with zero data leaving the machine and no per-query API cost.</p>
+        <div class="tags">Python · FastAPI · ChromaDB · Ollama · SSE</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Kenyan AI Financial Advisor</span>
+          <span class="entry-meta">2024</span>
+        </div>
+        <p>Clean Architecture Python service giving financial guidance using Kenya-specific instruments (M-Pesa, SACCOs, Treasury Bills, PAYE) instead of generic defaults. Hardened for public use: HTML sanitization, rate limiting, target of 80%+ test coverage.</p>
+        <div class="tags">Python · FastAPI · Pydantic · Ollama</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">PR Context Builder</span>
+          <span class="entry-meta">2024</span>
+        </div>
+        <p>Rust CLI that gathers diff/commit/repo context from local Git or a GitHub PR, runs rule-based detection for migrations and test gaps, and optionally generates an LLM review briefing (OpenAI-compatible or local Ollama).</p>
+        <div class="tags">Rust · CLI · Git</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-label">Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <p>Rust, Python, Go</p>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <p>FastAPI, Actix-web, SQLx</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>Docker, PostgreSQL, Linux, ChromaDB, Ollama</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

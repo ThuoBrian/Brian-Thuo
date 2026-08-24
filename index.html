@@ -10,10 +10,25 @@
   <meta name="author" content="Brian Gachau Thuo" />
   <link rel="canonical" href="https://thuobrian.github.io/Brian-Thuo/" />
 
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
   <meta property="og:title" content="Brian Gachau Thuo · Rust Systems Engineer" />
   <meta property="og:description" content="Reliable backend systems and local AI tooling for teams in East Africa." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thuobrian.github.io/Brian-Thuo/" />
+  <meta property="og:image" content="https://thuobrian.github.io/Brian-Thuo/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Brian Gachau Thuo — Rust Systems Engineer, IT Ops, Nairobi" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Brian Gachau Thuo · Rust Systems Engineer" />
+  <meta name="twitter:description" content="Reliable backend systems and local AI tooling for teams in East Africa." />
+  <meta name="twitter:image" content="https://thuobrian.github.io/Brian-Thuo/images/og-image.png" />
 
   <script type="application/ld+json">
   {
@@ -51,6 +66,7 @@
         <li><a href="#work" class="nav-link">Work</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="resume.html" class="nav-link" target="_blank" rel="noopener noreferrer">Résumé</a></li>
       </ul>
 
       <a href="mailto:thuogachau@gmail.com" class="nav-email">thuogachau@gmail.com</a>
@@ -69,6 +85,7 @@
         </p>
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">View selected work</a>
+          <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download résumé</a>
         </div>
       </div>
 
@@ -110,7 +127,7 @@
         <div class="project-list">
           <article class="project-card">
             <div class="project-image">
-              <img src="images/pic01.jpg" alt="Laptop Inventory API dashboard preview" loading="lazy" />
+              <img src="images/preview-laptop-inventory.svg" alt="Terminal example: assigning a laptop via the API and the resulting JSON response" loading="lazy" />
             </div>
             <div class="project-body">
               <div class="project-meta">
@@ -118,7 +135,7 @@
                 <span class="project-type">API</span>
               </div>
               <h3 class="project-title">Laptop Inventory API</h3>
-              <p class="project-desc">Tracks hardware assignments with compile-time checked SQL so bad queries never reach production.</p>
+              <p class="project-desc"><strong>Problem:</strong> IT ops needed to track which laptop is assigned to which staff member without a spreadsheet drifting out of sync. <strong>Approach:</strong> a Rust/Actix-web API over Postgres, using SQLx instead of an ORM so every query is checked against the schema at compile time, plus atomic transactions so unassigning a user always reverts the laptop's status in the same operation — no orphaned "assigned" records. <strong>Also ships</strong> a server-rendered HTMX dashboard, so non-technical staff can use it without a SPA build step.</p>
               <ul class="project-tags">
                 <li>Rust</li>
                 <li>Actix-web</li>
@@ -137,7 +154,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="images/pic02.jpg" alt="AI Support Chatbot interface preview" loading="lazy" />
+              <img src="images/preview-ai-chatbot.svg" alt="Terminal example: an IT support question answered from a local document with a page citation" loading="lazy" />
             </div>
             <div class="project-body">
               <div class="project-meta">
@@ -145,7 +162,7 @@
                 <span class="project-type">AI Tool</span>
               </div>
               <h3 class="project-title">AI Support Chatbot</h3>
-              <p class="project-desc">Local RAG IT-support bot that answers from internal docs without external API calls or latency.</p>
+              <p class="project-desc"><strong>Problem:</strong> teams with sensitive internal docs can't route IT-support questions through a cloud LLM. <strong>Approach:</strong> a fully local RAG stack — Ollama for inference, ChromaDB for embeddings, FastAPI streaming answers over SSE — so questions are answered from ingested PDFs, Word docs, and Markdown with zero data leaving the machine, and zero per-query API cost. Ships with an interactive setup script so a non-developer can stand it up.</p>
               <ul class="project-tags">
                 <li>Python</li>
                 <li>FastAPI</li>
@@ -164,7 +181,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="images/pic03.jpg" alt="Kenyan AI Financial Advisor preview" loading="lazy" />
+              <img src="images/preview-financial-advisor.svg" alt="Terminal example: a CLI budget breakdown using M-Pesa and SACCO categories with an investment recommendation" loading="lazy" />
             </div>
             <div class="project-body">
               <div class="project-meta">
@@ -172,7 +189,7 @@
                 <span class="project-type">AI Product</span>
               </div>
               <h3 class="project-title">Kenyan AI Financial Advisor</h3>
-              <p class="project-desc">AI advisor tuned for the Kenyan market: budgeting, saving, investing, and tax planning.</p>
+              <p class="project-desc"><strong>Problem:</strong> generic financial-advice tools ignore how Kenyans actually move money — M-Pesa, Fuliza, SACCOs, Chamas, Treasury Bills. <strong>Approach:</strong> a Clean Architecture Python app (domain/application/adapters) that swaps in local instruments and PAYE tax rules instead of Western defaults, with security taken seriously for a public-facing advisor — HTML sanitization, rate limiting, and a target of 80%+ test coverage enforced via a Makefile lint/type-check/test pipeline. Clearly scoped as educational, not licensed advice.</p>
               <ul class="project-tags">
                 <li>Python</li>
                 <li>AI/ML</li>
@@ -190,7 +207,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="images/pic04.jpg" alt="PR Context Builder CLI preview" loading="lazy" />
+              <img src="images/preview-pr-context.svg" alt="Terminal example: generating a review briefing that flags cross-file impact and a security concern" loading="lazy" />
             </div>
             <div class="project-body">
               <div class="project-meta">
@@ -198,7 +215,7 @@
                 <span class="project-type">CLI</span>
               </div>
               <h3 class="project-title">PR Context Builder</h3>
-              <p class="project-desc">Rust CLI that builds rich PR summaries from local Git context, saving review cycles.</p>
+              <p class="project-desc"><strong>Problem:</strong> reviewers waste time re-deriving context a diff alone doesn't show — what else touches this code, is there a migration, is there an obvious security smell. <strong>Approach:</strong> a Rust CLI that gathers diff, commit history, and repo structure from a local repo or a GitHub PR, runs rule-based detection for migrations/config changes/test gaps, then optionally hands that context to an LLM (OpenAI-compatible or local Ollama) to produce a structured review briefing.</p>
               <ul class="project-tags">
                 <li>Rust</li>
                 <li>CLI</li>
@@ -220,7 +237,7 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-photo">
-            <img src="images/pic05.jpg" alt="Brian Gachau Thuo" loading="lazy" />
+            <img src="images/about-panel.svg" alt="Brian Gachau Thuo — Nairobi, Kenya · Rust, Systems, AI tooling" loading="lazy" />
           </div>
 
           <div class="about-text">

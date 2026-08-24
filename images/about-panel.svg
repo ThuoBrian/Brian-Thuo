@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Brian Gachau Thuo — Nairobi, Kenya</title>
+  <desc id="desc">A minimal graphic panel standing in for a headshot: location, role, and timezone, in the same dark systems-status style as the rest of the site.</desc>
+  <defs>
+    <linearGradient id="ap-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#151D2E"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <pattern id="ap-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#94A3B8" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="280" height="360" fill="url(#ap-bg)"/>
+  <rect x="0" y="0" width="280" height="360" fill="url(#ap-grid)"/>
+  <rect x="0.5" y="0.5" width="279" height="359" fill="none" stroke="#94A3B8" stroke-opacity="0.16"/>
+
+  <circle cx="140" cy="140" r="46" fill="none" stroke="#34D399" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="140" cy="140" r="30" fill="none" stroke="#94A3B8" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="140" y="147" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" fill="#F1F5F9">BT</text>
+
+  <line x1="24" y1="216" x2="256" y2="216" stroke="#94A3B8" stroke-opacity="0.16"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="24" y="246" font-size="13" fill="#64748B">LOCATION</text>
+    <text x="24" y="266" font-size="15" fill="#F1F5F9">Nairobi, Kenya</text>
+
+    <text x="24" y="296" font-size="13" fill="#64748B">FOCUS</text>
+    <text x="24" y="316" font-size="15" fill="#F1F5F9">Rust · Systems · AI Tooling</text>
+  </g>
+
+  <circle cx="30" cy="336" r="4" fill="#34D399"/>
+  <text x="42" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#94A3B8">EAT · UTC+3</text>
+</svg>
